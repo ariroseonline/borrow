@@ -1,0 +1,17 @@
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+$font-family-base: "Open Sans";
+
+
+@import 'bootstrap';
+
+
+body { padding-top: 70px; }
+
+.footer {
+	margin-top:50px;
+	color:$gray-light;
+	a {
+		color:$gray;
+	}
+}

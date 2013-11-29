@@ -1,0 +1,25 @@
+<h1>Listing his</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @his.each do |hi| %>
+      <tr>
+        <td><%= link_to 'Show', hi %></td>
+        <td><%= link_to 'Edit', edit_hi_path(hi) %></td>
+        <td><%= link_to 'Destroy', hi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hi', new_hi_path %>

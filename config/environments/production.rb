@@ -85,6 +85,8 @@ Borrow::Application.configure do
   # config.assets.compile = true
   # config.assets.digest = true
 
-  
+  #remember update to future host
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
 
 end

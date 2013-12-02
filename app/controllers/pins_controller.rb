@@ -42,7 +42,6 @@ class PinsController < ApplicationController
   # PATCH/PUT /pins/1.json
   def update
     @pin = current_user.pins.find(params[:id]);
-
     respond_to do |format|
       if @pin.update(pin_params)
         format.html { redirect_to @pin, flash: { success: 'Pin was successfully updated.'}}

@@ -93,6 +93,7 @@ Borrow::Application.configure do
     :storage => :s3,
     :s3_credentials => {
       :bucket => 'arisafari',
+      :url => ":s3_domain_url",
       :access_key_id => 'AKIAIORRCXKHQWTSSLAQ',
       :secret_access_key => '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'
     }

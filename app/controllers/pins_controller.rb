@@ -45,7 +45,7 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.update(pin_params)
-        format.html { redirect_to @pin, notice: 'Pin was successfully updated.' }
+        format.html { redirect_to @pin, flash: { success: 'Pin was successfully updated.'}}
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -58,8 +58,9 @@ class PinsController < ApplicationController
   # DELETE /pins/1.json
   def destroy
     @pin = current_user.pins.find(params[:id]);
+    @pin.destroy
     respond_to do |format|
-      format.html { redirect_to pins_url }
+      format.html { redirect_to pins_url, flash: { success: 'Pin was deleted!'}}
       format.json { head :no_content }
     end
   end

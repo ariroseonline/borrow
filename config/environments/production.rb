@@ -98,6 +98,5 @@ Borrow::Application.configure do
     }
   }
 
-  heroku config:add AWS_BUCKET=
 
 end

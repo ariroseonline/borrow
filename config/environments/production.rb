@@ -89,16 +89,23 @@ Borrow::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   #AWS for paper clip
-
-
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => ENV['S3_BUCKET_NAME'],
-      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      :bucket => 'arisafari',
+      :access_key_id => 'AKIAIORRCXKHQWTSSLAQ',
+      :secret_access_key => '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'
     }
   }
+
+#   config.paperclip_defaults = {
+#   :storage => :s3,
+#   :s3_credentials => {
+#     :bucket => ENV['S3_BUCKET_NAME'],
+#     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+#     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+#   }
+# }
 
 
 end

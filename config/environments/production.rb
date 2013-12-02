@@ -92,7 +92,7 @@ Borrow::Application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => 'arisafari',
+      :bucket => 'the-ari-files',
       :access_key_id => 'AKIAIORRCXKHQWTSSLAQ',
       :secret_access_key => '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'
     }

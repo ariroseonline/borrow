@@ -90,11 +90,11 @@ Borrow::Application.configure do
 
   #AWS for paper clip
   config.paperclip_defaults = {
-    storage: :s3,
-    s3_credentials: {
-      :bucket: ENV['arisafari'],
-      :access_key_id: ENV['AKIAIORRCXKHQWTSSLAQ'],
-      :secret_access_key: ENV['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']
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['arisafari'],
+      :access_key_id => ENV['AKIAIORRCXKHQWTSSLAQ'],
+      :secret_access_key => ENV['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']
     }
   }
 

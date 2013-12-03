@@ -29,7 +29,7 @@ class PinsController < ApplicationController
     @pin = current_user.pins.new(pin_params)
     respond_to do |format|
       if @pin.save
-        format.html { redirect_to @pin, notice: 'Pin was successfully created.' }
+        format.html { redirect_to @pin, flash: { success: 'Pin was successfully created.' }}
         format.json { render action: 'show', status: :created, location: @pin }
       else
         format.html { render action: 'new' }

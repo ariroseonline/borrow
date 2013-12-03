@@ -2,8 +2,11 @@ Borrow::Application.routes.draw do
   
   resources :pins
 
-  devise_for :users
-  root 'pages#home'
+  #custom devise controller!
+  devise_for :users, :controllers => { :sessions => 'sessions' }
+
+  
+  root 'pins#index'
 
   get "about" => "pages#about"
 

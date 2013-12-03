@@ -21,3 +21,30 @@ body { padding-top: 70px; }
 		color:$gray;
 	}
 }
+
+/* jQuery Masonry */
+
+.box {
+	margin:5px;
+	padding:5px;
+	font-size:11px;
+	line-height: 1.4em;
+	float:left;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 1px 1px 10px #444;
+	width:214px;
+}
+
+.box img {
+	width:100%;
+}
+
+.full-width.box {
+	width: 100%;
+}
+
+.description {
+	margin: 10px 0 5px;
+}

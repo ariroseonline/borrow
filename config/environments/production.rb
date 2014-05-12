@@ -93,8 +93,8 @@ Borrow::Application.configure do
     :storage => :s3,
     :s3_credentials => {
       :bucket => 'the-ari-files',
-      :access_key_id => 'AKIAIORRCXKHQWTSSLAQ',
-      :secret_access_key => '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'
+      :access_key_id => 'INSERT ID HERE',
+      :secret_access_key => 'INSERT KEY HERE'
     }
   }
 
